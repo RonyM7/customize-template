@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset='utf-8'>
+      <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+      <title>Page Title</title>
+      <meta name='viewport' content='width=device-width, initial-scale=1'>
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+      <link rel='stylesheet' type='text/css' href='/static/main.css'>
+
+      <script src='/static/js/main.js'></script>
+   </head>
+   <body>
+        <header>
+            <div class="container">
+                    <img src="" width="200" />
+            </div>
+               
+            </header>
+      <div class="container">
+        <div class="wrapper">
+
+       
+         
+         <h1>Wallboard</h1>
+         <form enctype="multipart/form-data" method="post" action="/customize-template"  >
+            <div class="form-column">
+
+            
+                <div class="row">
+                <div class="form-group pull-left">
+                    <label>Doctor Name</label>
+                    <input type="text" name="drName" /><br />
+                </div>
+                <div class="form-group pull-left">
+                    <label>Doctor Title</label>
+                    <input type="text" name="drTitle" /><br />
+                </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group">
+                            <label>Introduction</label>
+                            <input type="text" name="intro" /><br />
+                    </div>
+
+                
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label>Doctor Specialty</label>
+                        <input type="text" name="drSpecialty" /><br />
+                    </div>
+                </div>
+        
+                
+
+                <div class="row">
+                    <div class="form-group">
+                        <label>Doctor Education</label>
+                        <input type="text" name="drEducation" /><br />
+                    </div>
+                </div>
+
+                <div class="row">
+                        <div class="form-group">
+                            <label>Clinic Info</label>
+                            <input type="text" name="clinic_info" /><br />
+                        </div>
+                    </div>
+
+                <div class="row">
+                    <div class="form-group">
+                        <label>Primary Color</label>
+                        <input class="colorpicker" type="color" name="primary_color" value="#844eb3" /><br />
+                    </div>
+
+                    <div class="form-group">
+                        <label>Secondary Color</label>
+                        <input class="colorpicker" type="color" name="secondary_color" value="#F08756" /><br />
+                    </div>
+                </div>
+
+                
+
+                <div class="row">
+                    <div class="form-group">
+                        <label>Upload Logo</label>
+                        <input type="file" name="fileUpload" />
+                    </div>
+                    <div class="form-group">
+                        <label>Upload Featured/Headshot Image</label>
+                        <input type="file" name="featuredImage" /><br />
+                    </div>
+                </div>
+                
+                
+            </div>
+
+            <div class="form-column">
+                <div class="template_selections">
+                    <div>
+                        Template 1
+                        <img src="static/images/template1.png" />
+                        <input type="radio" name="template" value="wallboard2">
+                    </div>
+                    
+                    <div>
+                        Template 2
+                        <img src="static/images/template2.png" />
+                        <input id="template3" type="radio" name="template" value="wallboard" checked="checked">
+                    </div>
+                </div>
+            </div>
+                
+           
+            <div class="clear">
+                <button id="submit" type="submit" value="Submit">Submit</button>
+            </div>
+           
+         </form>
+      </div>
+    </div> 
+      <!-- <form method="post" action="/api/v1/reflections">
+         <input type="text" name="lowPoint">
+         <input type="text" name="takeAway">
+         <input type="text" name="success">
+         <input type="submit" value="Submit">
+         </form> -->
+         <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+        <script type="text/javascript" src="static/js/form.js"></script>
+   </body>
+</html>

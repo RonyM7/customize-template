@@ -1,0 +1,11 @@
+Tech:
+Node.JS
+
+
+Getting Started
+- npm install in root folder
+- in root, run command: npm run dev-start
+- open Browser to localhost:3000
+
+
+
